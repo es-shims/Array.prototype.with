@@ -19,6 +19,22 @@ module.exports = function (arrayWith, t) {
 	);
 
 	t.deepEqual(
+		arrayWith(input, NaN, 'a'),
+		['a', 2, 3],
+		'index NaN -> 0 is replaced'
+	);
+	t.deepEqual(
+		arrayWith(input, 'NaN', 'a'),
+		['a', 2, 3],
+		'index "NaN" -> 0 is replaced'
+	);
+	t.deepEqual(
+		arrayWith(input, { valueOf: function () { return NaN; } }, 'a'),
+		['a', 2, 3],
+		'ToNumber index argument: index NaN -> 0 is replaced'
+	);
+
+	t.deepEqual(
 		arrayWith(input, 1, 'a'),
 		[1, 'a', 3],
 		'index 1 is replaced'
@@ -38,6 +54,17 @@ module.exports = function (arrayWith, t) {
 		arrayWith(input, -1, 'a'),
 		[1, 2, 'a'],
 		'index -1 -> 2 is replaced'
+	);
+
+	t.deepEqual(
+		arrayWith(input, { valueOf: function () { return 2; } }, 'a'),
+		[1, 2, 'a'],
+		'ToNumber index argument: index 2 is replaced'
+	);
+	t.deepEqual(
+		arrayWith(input, { valueOf: function () { return -1; } }, 'a'),
+		[1, 2, 'a'],
+		'ToNumber index argument: index -1 -> 2 is replaced'
 	);
 
 	t.deepEqual(

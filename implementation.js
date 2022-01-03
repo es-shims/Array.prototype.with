@@ -19,7 +19,7 @@ module.exports = function With(index, value) {
 	var O = ToObject(this); // step 1
 	var len = LengthOfArrayLike(O); // step 2
 	var relativeIndex = ToIntegerOrInfinity(index); // step 3
-	var actualIndex = index >= 0 ? relativeIndex : len + relativeIndex; // step 4-5
+	var actualIndex = relativeIndex >= 0 ? relativeIndex : len + relativeIndex; // step 4-5
 
 	if (actualIndex >= len || actualIndex < 0) {
 		throw new $RangeError('index is out of range'); // step 6
