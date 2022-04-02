@@ -3,6 +3,7 @@
 var forEach = require('for-each');
 var v = require('es-value-fixtures');
 var inspect = require('object-inspect');
+var has = require('has');
 
 module.exports = function (arrayWith, t) {
 	var input = [1, 2, 3];
@@ -117,4 +118,19 @@ module.exports = function (arrayWith, t) {
 		RangeError,
 		'|-2| is > length'
 	);
+
+	t.test('holes', function (st) {
+		var arr = [0, , 2, , 4]; // eslint-disable-line no-sparse-arrays
+		Array.prototype[3] = 3; // eslint-disable-line no-extend-native
+		st.teardown(function () {
+			delete Array.prototype[3];
+		});
+
+		var result = arrayWith(arr, 2, 6);
+		st.deepEqual(result, [0, undefined, 6, 3, 4]);
+		st.ok(has(result, 1), 'hole at index 1 is filled');
+		st.ok(has(result, 3), 'hole at index 3 is filled');
+
+		st.end();
+	});
 };
