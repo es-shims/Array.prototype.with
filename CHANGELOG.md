@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/es-shims/Array.prototype.with/compare/v1.0.0...v1.0.1) - 2022-04-02
+
+### Commits
+
+- Revert "[Refactor] use concat/slice instead of explicit spec steps" [`ff94848`](https://github.com/es-shims/Array.prototype.with/commit/ff9484831f4ea7eafbd8ab4683fd0575a65961b3)
+- [Tests] add tests that failed without ff94848 [`793f148`](https://github.com/es-shims/Array.prototype.with/commit/793f14851ddefd99762c613bad33c539e07b2828)
+- [readme] fix spec link [`ec92afe`](https://github.com/es-shims/Array.prototype.with/commit/ec92afe5188c5e89f52c24534788216696388931)
+
 ## v1.0.0 - 2022-03-31
 
 ### Commits
