@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/es-shims/Array.prototype.with/compare/v1.0.1...v1.1.0) - 2022-08-14
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`963c379`](https://github.com/es-shims/Array.prototype.with/commit/963c3798556ae71f7c144808e3b863e27c61b34f)
+- [Deps] update `define-properties`, `es-abstract`, `functions-have-names`, `get-intrinsic` [`b5bb3dd`](https://github.com/es-shims/Array.prototype.with/commit/b5bb3dd5e621e8b54718411f32507bb5fdc7f54d)
+- [Dev Deps] update `@ljharb/eslint-config`, `es-value-fixtures`, `object-inspect`, `tape` [`d7a32b9`](https://github.com/es-shims/Array.prototype.with/commit/d7a32b9444c427188976192cc1d75580e24e6db6)
+- [New] `shim`/`auto`: add `with` to `Symbol.unscopables` [`abb1f43`](https://github.com/es-shims/Array.prototype.with/commit/abb1f43461cb5c63a674d3596e786ec7dc0be6d3)
+
 ## [v1.0.1](https://github.com/es-shims/Array.prototype.with/compare/v1.0.0...v1.0.1) - 2022-04-02
 
 ### Commits
