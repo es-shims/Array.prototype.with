@@ -5,14 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/es-shims/Array.prototype.with/compare/v1.1.0...v1.1.1) - 2022-11-03
+
+### Commits
+
+- [Deps] update `es-abstract`, `get-intrinsic` [`e64d465`](https://github.com/es-shims/Array.prototype.with/commit/e64d4653480ff38d9b20ee4e7c181ee696c8f378)
+- [actions] update rebase action to use reusable workflow [`5283ecc`](https://github.com/es-shims/Array.prototype.with/commit/5283ecc39864e11e79c63ed3ae5d500c6ac30484)
+- [Dev Deps] update `aud`, `tape` [`d274553`](https://github.com/es-shims/Array.prototype.with/commit/d274553e3efe87be565b019de9adece8cb6f6a95)
+
 ## [v1.1.0](https://github.com/es-shims/Array.prototype.with/compare/v1.0.1...v1.1.0) - 2022-08-14
 
 ### Commits
 
-- [meta] use `npmignore` to autogenerate an npmignore file [`963c379`](https://github.com/es-shims/Array.prototype.with/commit/963c3798556ae71f7c144808e3b863e27c61b34f)
+- [meta] use `npmignore` to autogenerate an npmignore file [`0ccfaa1`](https://github.com/es-shims/Array.prototype.with/commit/0ccfaa1c8750e65dc414294395890560ffcd7968)
 - [Deps] update `define-properties`, `es-abstract`, `functions-have-names`, `get-intrinsic` [`b5bb3dd`](https://github.com/es-shims/Array.prototype.with/commit/b5bb3dd5e621e8b54718411f32507bb5fdc7f54d)
 - [Dev Deps] update `@ljharb/eslint-config`, `es-value-fixtures`, `object-inspect`, `tape` [`d7a32b9`](https://github.com/es-shims/Array.prototype.with/commit/d7a32b9444c427188976192cc1d75580e24e6db6)
-- [New] `shim`/`auto`: add `with` to `Symbol.unscopables` [`abb1f43`](https://github.com/es-shims/Array.prototype.with/commit/abb1f43461cb5c63a674d3596e786ec7dc0be6d3)
+- [New] `shim`/`auto`: add `with` to `Symbol.unscopables` [`0a2b944`](https://github.com/es-shims/Array.prototype.with/commit/0a2b94400fc033231083c864534bb44d63ef82b2)
 
 ## [v1.0.1](https://github.com/es-shims/Array.prototype.with/compare/v1.0.0...v1.0.1) - 2022-04-02
 
