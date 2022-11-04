@@ -2,14 +2,14 @@
 
 var GetIntrinsic = require('get-intrinsic');
 
-var ArrayCreate = require('es-abstract/2021/ArrayCreate');
-var CreateDataPropertyOrThrow = require('es-abstract/2021/CreateDataPropertyOrThrow');
-var DefinePropertyOrThrow = require('es-abstract/2021/DefinePropertyOrThrow');
-var Get = require('es-abstract/2021/Get');
-var ToIntegerOrInfinity = require('es-abstract/2021/ToIntegerOrInfinity');
-var LengthOfArrayLike = require('es-abstract/2021/LengthOfArrayLike');
-var ToObject = require('es-abstract/2021/ToObject');
-var ToString = require('es-abstract/2021/ToString');
+var ArrayCreate = require('es-abstract/2022/ArrayCreate');
+var CreateDataPropertyOrThrow = require('es-abstract/2022/CreateDataPropertyOrThrow');
+var DefinePropertyOrThrow = require('es-abstract/2022/DefinePropertyOrThrow');
+var Get = require('es-abstract/2022/Get');
+var ToIntegerOrInfinity = require('es-abstract/2022/ToIntegerOrInfinity');
+var LengthOfArrayLike = require('es-abstract/2022/LengthOfArrayLike');
+var ToObject = require('es-abstract/2022/ToObject');
+var ToString = require('es-abstract/2022/ToString');
 
 var functionsHaveConfigurableNames = require('functions-have-names').functionsHaveConfigurableNames();
 
