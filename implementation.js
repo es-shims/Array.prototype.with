@@ -4,18 +4,17 @@ var GetIntrinsic = require('get-intrinsic');
 
 var ArrayCreate = require('es-abstract/2023/ArrayCreate');
 var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
-var DefinePropertyOrThrow = require('es-abstract/2023/DefinePropertyOrThrow');
 var Get = require('es-abstract/2023/Get');
 var ToIntegerOrInfinity = require('es-abstract/2023/ToIntegerOrInfinity');
 var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
 var ToObject = require('es-abstract/2023/ToObject');
 var ToString = require('es-abstract/2023/ToString');
 
-var functionsHaveConfigurableNames = require('functions-have-names').functionsHaveConfigurableNames();
-
 var $RangeError = GetIntrinsic('%RangeError%');
 
-module.exports = function With(index, value) {
+var setFunctionName = require('set-function-name');
+
+module.exports = setFunctionName(function With(index, value) {
 	var O = ToObject(this); // step 1
 	var len = LengthOfArrayLike(O); // step 2
 	var relativeIndex = ToIntegerOrInfinity(index); // step 3
@@ -35,13 +34,4 @@ module.exports = function With(index, value) {
 	}
 
 	return A; // step 10
-};
-
-if (functionsHaveConfigurableNames) {
-	DefinePropertyOrThrow(module.exports, 'name', {
-		'[[Configurable]]': true,
-		'[[Enumerable]]': false,
-		'[[Value]]': 'with',
-		'[[Writable]]': false
-	});
-}
+}, 'with', true);
