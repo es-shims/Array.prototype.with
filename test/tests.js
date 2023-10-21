@@ -3,7 +3,7 @@
 var forEach = require('for-each');
 var v = require('es-value-fixtures');
 var inspect = require('object-inspect');
-var has = require('has');
+var hasOwn = require('hasown');
 
 module.exports = function (arrayWith, t) {
 	var input = [1, 2, 3];
@@ -128,8 +128,8 @@ module.exports = function (arrayWith, t) {
 
 		var result = arrayWith(arr, 2, 6);
 		st.deepEqual(result, [0, undefined, 6, 3, 4]);
-		st.ok(has(result, 1), 'hole at index 1 is filled');
-		st.ok(has(result, 3), 'hole at index 3 is filled');
+		st.ok(hasOwn(result, 1), 'hole at index 1 is filled');
+		st.ok(hasOwn(result, 3), 'hole at index 3 is filled');
 
 		st.end();
 	});
