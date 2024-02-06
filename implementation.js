@@ -1,7 +1,5 @@
 'use strict';
 
-var GetIntrinsic = require('get-intrinsic');
-
 var ArrayCreate = require('es-abstract/2023/ArrayCreate');
 var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
 var Get = require('es-abstract/2023/Get');
@@ -10,7 +8,7 @@ var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
 var ToObject = require('es-abstract/2023/ToObject');
 var ToString = require('es-abstract/2023/ToString');
 
-var $RangeError = GetIntrinsic('%RangeError%');
+var $RangeError = require('es-errors/range');
 
 var setFunctionName = require('set-function-name');
 
