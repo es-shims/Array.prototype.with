@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.5](https://github.com/es-shims/Array.prototype.with/compare/v1.1.4...v1.1.5) - 2024-02-06
+
+### Commits
+
+- [Dev Deps] use `hasown` instead of `has` [`dbf5ddc`](https://github.com/es-shims/Array.prototype.with/commit/dbf5ddc7d023b94c5e8f3ba53b6b6fd899ab574b)
+- [Refactor] use `es-errors`, so things that only need those do not need `get-intrinsic` [`1336b0d`](https://github.com/es-shims/Array.prototype.with/commit/1336b0dc7bcd8afcde779b85f57a3158aa485f64)
+- [Dev Deps] update `aud`, `npmignore`, `tape` [`ca2f226`](https://github.com/es-shims/Array.prototype.with/commit/ca2f2262f022cfc81dcb9bb7056e5f687ffa6747)
+- [Deps] update `call-bind`, `es-abstract`, `get-intrinsic` [`cb35187`](https://github.com/es-shims/Array.prototype.with/commit/cb3518791fe3774c35c9e7eb85804fea963f83f2)
+- [Dev Deps] update `object-inspect`, `tape` [`edc349a`](https://github.com/es-shims/Array.prototype.with/commit/edc349afb5f574be8da5406e69ff8596f8ec5230)
+- [Deps] update `call-bind` [`4ea70a2`](https://github.com/es-shims/Array.prototype.with/commit/4ea70a22dc63c90c0adb7705fc71fdc7f64653cd)
+
 ## [v1.1.4](https://github.com/es-shims/Array.prototype.with/compare/v1.1.3...v1.1.4) - 2023-09-13
 
 ### Commits
