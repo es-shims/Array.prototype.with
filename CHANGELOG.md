@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.6](https://github.com/es-shims/Array.prototype.with/compare/v1.1.5...v1.1.6) - 2024-03-22
+
+### Commits
+
+- [actions] use reusable workflows [`0703b98`](https://github.com/es-shims/Array.prototype.with/commit/0703b988efeaac882557d32de4f467c2657ffe6b)
+- [Deps] update `call-bind`, `es-abstract`, `set-function-name` [`0fdce9d`](https://github.com/es-shims/Array.prototype.with/commit/0fdce9da4e0175c10ec26bf26a5c854e04379c08)
+- [meta] add missing `engines.node` [`f8f0b81`](https://github.com/es-shims/Array.prototype.with/commit/f8f0b81efa66f1b1e8f535e47d95e6d38c16bd5d)
+- [Dev Deps] update `tape` [`4bb0a4c`](https://github.com/es-shims/Array.prototype.with/commit/4bb0a4cac5fca4a77492b8c9d0f1d5f0d9a5f869)
+
 ## [v1.1.5](https://github.com/es-shims/Array.prototype.with/compare/v1.1.4...v1.1.5) - 2024-02-06
 
 ### Commits
