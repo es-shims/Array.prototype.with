@@ -1,12 +1,12 @@
 'use strict';
 
-var ArrayCreate = require('es-abstract/2023/ArrayCreate');
-var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
-var Get = require('es-abstract/2023/Get');
-var ToIntegerOrInfinity = require('es-abstract/2023/ToIntegerOrInfinity');
-var LengthOfArrayLike = require('es-abstract/2023/LengthOfArrayLike');
-var ToObject = require('es-abstract/2023/ToObject');
-var ToString = require('es-abstract/2023/ToString');
+var ArrayCreate = require('es-abstract/2024/ArrayCreate');
+var CreateDataPropertyOrThrow = require('es-abstract/2024/CreateDataPropertyOrThrow');
+var Get = require('es-abstract/2024/Get');
+var ToIntegerOrInfinity = require('es-abstract/2024/ToIntegerOrInfinity');
+var LengthOfArrayLike = require('es-abstract/2024/LengthOfArrayLike');
+var ToObject = require('es-abstract/2024/ToObject');
+var ToString = require('es-abstract/2024/ToString');
 
 var $RangeError = require('es-errors/range');
 
